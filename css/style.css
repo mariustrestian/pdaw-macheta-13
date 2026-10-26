@@ -862,3 +862,65 @@ img {
   font-size: 20px;
   line-height: 24px;
 }
+
+/* ===== Bonus: efecte :hover cu transition ===== */
+.btn,
+.nav__link,
+.card,
+.plan,
+.gallery__img,
+.footer__nav a,
+.footer__social a,
+.chat-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--dark:hover {
+  background: var(--color-ink);
+}
+
+.btn--light:hover {
+  background: rgba(51, 65, 85, 0.1);
+}
+
+.btn--outline:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.btn--gold:hover {
+  background: #a16207;
+  border-color: #a16207;
+}
+
+.nav__link:hover {
+  border-bottom-color: var(--color-dark);
+}
+
+.card:hover,
+.plan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+.gallery__img:hover {
+  transform: scale(1.02);
+}
+
+.footer__nav a:hover {
+  color: var(--color-gold);
+}
+
+.footer__social a:hover {
+  background: var(--color-gold);
+  color: #0f131a;
+}
+
+.chat-btn:hover {
+  transform: scale(1.08);
+}
