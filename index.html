@@ -1,1 +1,355 @@
-test
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina – Studio foto în Chișinău</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Bara de sus -->
+  <div class="topbar">
+    <div class="topbar__contact">
+      <span>📞 078 646 464</span>
+      <span>✉️ foto@lumina.md</span>
+    </div>
+    <div class="topbar__schedule">Doar cu programare, 10–20</div>
+  </div>
+
+  <!-- 2. Header (sticky) -->
+  <header class="header">
+    <a class="logo" href="#acasa">📸 Lumina</a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link nav__link--active" href="#acasa">Acasă</a></li>
+        <li><a class="nav__link" href="#sedinte">Ședințe</a></li>
+        <li><a class="nav__link" href="#portofoliu">Portofoliu</a></li>
+        <li><a class="nav__link" href="#preturi">Prețuri</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--dark" href="#preturi">Rezervă studioul</a>
+  </header>
+
+  <main>
+
+    <!-- 3. Hero -->
+    <section class="hero" id="acasa">
+      <div class="hero__text">
+        <span class="hero__badge">Studio de 120 m² în Chișinău</span>
+        <h1 class="hero__title">Momente <strong>frumoase,</strong> <span class="hero__accent">păstrate</span> pentru totdeauna</h1>
+        <p class="hero__desc">Ședințe foto de familie, portrete, fotografii de produs și nunți. Fundaluri, lumini profesionale și machiaj, totul într-un singur loc.</p>
+        <div class="hero__buttons">
+          <a class="btn btn--dark" href="#sedinte">Alege o ședință</a>
+          <a class="btn btn--light" href="#portofoliu">Vezi portofoliul</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>2.400</strong> <span>ședințe realizate</span></li>
+          <li><strong>7</strong> <span>fundaluri</span></li>
+          <li><strong>48 h</strong> <span>pentru fotografii</span></li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <img class="hero__img" src="img/hero.jpg" alt="Softbox profesional în studioul Lumina">
+        <div class="hero__card hero__card--top">
+          <span class="hero__card-icon">💄</span>
+          <div>
+            <strong>Machiaj inclus</strong>
+            <span>la ședința de portret</span>
+          </div>
+        </div>
+        <div class="hero__card hero__card--bottom">
+          <span class="hero__card-icon">📔</span>
+          <div>
+            <strong>Album tipărit</strong>
+            <span>la pachetele de familie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Avantaje -->
+    <section class="advantages">
+      <span class="eyebrow">Cum lucrăm</span>
+      <h2 class="section-title">De la idee la fotografia finală</h2>
+      <p class="section-subtitle">Te ghidăm la fiecare pas, chiar dacă nu ai mai pozat niciodată.</p>
+      <div class="advantages__grid">
+        <article class="advantage">
+          <span class="advantage__number">01</span>
+          <span class="advantage__icon">💬</span>
+          <h3>Discutăm ideea</h3>
+          <p>Alegem împreună stilul, hainele și decorul.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage__number">02</span>
+          <span class="advantage__icon">📸</span>
+          <h3>Ședința foto</h3>
+          <p>Fotograful te îndrumă, astfel încât pozele ies naturale.</p>
+        </article>
+        <article class="advantage">
+          <span class="advantage__number">03</span>
+          <span class="advantage__icon">✏️</span>
+          <h3>Retuș manual</h3>
+          <p>Fiecare fotografie aleasă e prelucrată atent.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Produse / ședințe -->
+    <section class="sessions" id="sedinte">
+      <span class="eyebrow">Ședințe</span>
+      <h2 class="section-title">Alege tipul de ședință</h2>
+      <p class="section-subtitle">Toate ședințele includ fotografiile retușate în format digital.</p>
+      <div class="sessions__grid">
+
+        <article class="card">
+          <div class="card__image">
+            <span class="card__tag">TOP</span>
+            <img src="img/portret.jpg" alt="Ședință portret">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Portret</h3>
+              <span class="card__stars">★★★★★</span>
+            </div>
+            <p class="card__meta">1 oră · 15 fotografii</p>
+            <div class="card__footer">
+              <span class="card__price">1200 lei</span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <img src="img/familie.jpg" alt="Ședință de familie">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Familie</h3>
+              <span class="card__stars">★★★★★</span>
+            </div>
+            <p class="card__meta">90 min · 25 fotografii</p>
+            <div class="card__footer">
+              <span class="card__price">1800 lei</span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <img src="img/nou-nascut.jpg" alt="Ședință nou-născut">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Nou-născut</h3>
+              <span class="card__stars">★★★★★</span>
+            </div>
+            <p class="card__meta">la domiciliu · 3 ore</p>
+            <div class="card__footer">
+              <span class="card__price">2200 lei</span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <span class="card__tag">-17%</span>
+            <img src="img/gravida.jpg" alt="Ședință gravidă">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Gravidă</h3>
+              <span class="card__stars">★★★★☆</span>
+            </div>
+            <p class="card__meta">studio · 20 fotografii</p>
+            <div class="card__footer">
+              <span class="card__price">1500 lei <s>1800 lei</s></span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <span class="card__tag">NOU</span>
+            <img src="img/produs.jpg" alt="Fotografie de produs">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Foto de produs</h3>
+              <span class="card__stars">★★★★☆</span>
+            </div>
+            <p class="card__meta">fundal alb · 10 piese</p>
+            <div class="card__footer">
+              <span class="card__price">900 lei</span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">
+            <img src="img/cv.jpg" alt="Fotografie pentru CV">
+          </div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3>Foto pentru CV</h3>
+              <span class="card__stars">★★★★★</span>
+            </div>
+            <p class="card__meta">30 min · 5 fotografii</p>
+            <div class="card__footer">
+              <span class="card__price">600 lei</span>
+              <a class="btn btn--dark btn--small" href="#contact">Rezervă</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6. Recenzii -->
+    <section class="reviews">
+      <span class="eyebrow">Clienți</span>
+      <h2 class="section-title">Ce spun cei care au pozat aici</h2>
+      <div class="reviews__grid">
+        <article class="review">
+          <span class="review__stars">★★★★★</span>
+          <p class="review__text">Nu mă pricep să pozez. Aici m-am simțit relaxată și am primit niște portrete foarte frumoase.</p>
+          <div class="review__author">
+            <span class="avatar">VC</span>
+            <div>
+              <strong>Veronica Ceban</strong>
+              <span>ședință portret</span>
+            </div>
+          </div>
+        </article>
+        <article class="review">
+          <span class="review__stars">★★★★★</span>
+          <p class="review__text">Pozele cu bebelușul nostru sunt cea mai prețioasă amintire.</p>
+          <div class="review__author">
+            <span class="avatar">ET</span>
+            <div>
+              <strong>Elena Tyrcanu</strong>
+              <span>ședință nou-născut</span>
+            </div>
+          </div>
+        </article>
+        <article class="review">
+          <span class="review__stars">★★★★★</span>
+          <p class="review__text">Fotografiile de produs ne-au dublat vânzările online.</p>
+          <div class="review__author">
+            <span class="avatar">MG</span>
+            <div>
+              <strong>Marina Gherman</strong>
+              <span>magazin de bijuterii</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. Galerie -->
+    <section class="gallery" id="portofoliu">
+      <span class="eyebrow">Portofoliu</span>
+      <h2 class="section-title">Din portofoliul nostru</h2>
+      <div class="gallery__grid">
+        <img class="gallery__img gallery__img--big" src="img/galerie-1.jpg" alt="Interiorul studioului">
+        <img class="gallery__img" src="img/galerie-2.jpg" alt="Lumină de studio">
+        <img class="gallery__img" src="img/galerie-3.jpg" alt="Aparat foto">
+        <img class="gallery__img gallery__img--wide" src="img/galerie-4.jpg" alt="Fotograf cu teleobiectiv">
+      </div>
+    </section>
+
+    <!-- 8. Oferta: prețuri / închiriere -->
+    <section class="pricing" id="preturi">
+      <span class="eyebrow">Închiriere</span>
+      <h2 class="section-title">Închiriază studioul</h2>
+      <p class="section-subtitle">Pentru fotografi și creatori de conținut: lumini și fundaluri incluse.</p>
+      <div class="pricing__grid">
+
+        <article class="plan">
+          <h3>O oră</h3>
+          <p class="plan__price">350 lei <span>/ oră</span></p>
+          <ul class="plan__list">
+            <li>✓ 2 lumini continue</li>
+            <li>✓ Fundal alb sau negru</li>
+            <li>✓ Cabină de schimb</li>
+          </ul>
+          <a class="btn btn--outline" href="#contact">Rezervă</a>
+        </article>
+
+        <article class="plan plan--featured">
+          <span class="plan__badge">Cel mai ales</span>
+          <h3>Jumătate de zi</h3>
+          <p class="plan__price">1.200 lei <span>/ 4 ore</span></p>
+          <ul class="plan__list">
+            <li>✓ Lumini și blițuri</li>
+            <li>✓ 7 fundaluri la alegere</li>
+            <li>✓ Cafea și apă</li>
+            <li>✓ Asistent la cerere</li>
+          </ul>
+          <a class="btn btn--gold" href="#contact">Rezervă</a>
+        </article>
+
+        <article class="plan">
+          <h3>Zi întreagă</h3>
+          <p class="plan__price">2.200 lei <span>/ 8 ore</span></p>
+          <ul class="plan__list">
+            <li>✓ Tot echipamentul</li>
+            <li>✓ Zonă de machiaj</li>
+            <li>✓ Acces după program</li>
+          </ul>
+          <a class="btn btn--outline" href="#contact">Rezervă</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 9. Abonare -->
+    <section class="subscribe" id="contact">
+      <div class="subscribe__box">
+        <span class="subscribe__icon">✉️</span>
+        <h2>Mini-ședințe de sezon</h2>
+        <p>Află primul când deschidem programările de Crăciun.</p>
+        <form class="subscribe__form" action="#" method="post">
+          <label class="visually-hidden" for="email">Adresa de e-mail</label>
+          <input type="email" id="email" name="email" placeholder="Adresa ta de e-mail" required>
+          <button type="submit" class="btn btn--dark">Anunță-mă</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Footer -->
+  <footer class="footer">
+    <a class="logo logo--light" href="#acasa">📸 Lumina</a>
+    <p class="footer__desc">Studio foto în Chișinău, cu 7 fundaluri și lumini profesionale. Fotografiem oameni și produse din 2018.</p>
+    <nav class="footer__nav">
+      <a href="#acasa">Acasă</a>
+      <a href="#sedinte">Ședințe</a>
+      <a href="#portofoliu">Portofoliu</a>
+      <a href="#preturi">Prețuri</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer__social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Instagram">ig</a>
+      <a href="#" aria-label="YouTube">yt</a>
+    </div>
+    <p class="footer__copy">© 2026 Studioul foto Lumina · Făcut cu ♥ în Chișinău · Trestian Marius-Vincenzo</p>
+  </footer>
+
+  <!-- 11. Buton plutitor (fixed) -->
+  <a class="chat-btn" href="#contact" aria-label="Chat">💬</a>
+
+</body>
+</html>
