@@ -79,6 +79,11 @@ img {
   color: var(--color-text);
 }
 
+.nav {
+  margin-left: auto;
+  margin-right: 34px;
+}
+
 .nav__list {
   display: flex;
   gap: 28px;
@@ -87,7 +92,7 @@ img {
 .nav__link {
   display: inline-block;
   padding: 4px 0;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--color-dark);
   border-bottom: 2px solid transparent;
 }
@@ -102,12 +107,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 40px 64px;
+  padding: 80px 40px 56px;
   background: var(--color-hero-bg);
 }
 
 .hero__text {
-  width: 460px;
+  width: 470px;
 }
 
 .hero__badge {
@@ -121,6 +126,7 @@ img {
 }
 
 .hero__title {
+  max-width: 420px;
   margin-top: 16px;
   font-family: var(--font-heading);
   font-size: 44px;
@@ -135,7 +141,7 @@ img {
 
 .hero__desc {
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   color: #475569;
 }
@@ -143,7 +149,7 @@ img {
 .hero__buttons {
   display: flex;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .hero__buttons .btn {
@@ -156,13 +162,13 @@ img {
 .hero__stats {
   display: flex;
   gap: 32px;
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 .hero__stats li {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0;
 }
 
 .hero__stats strong {
@@ -234,5 +240,83 @@ img {
 .hero__card span:not(.hero__card-icon) {
   display: block;
   font-size: 14px;
+  color: var(--color-muted);
+}
+
+/* ===== Titluri de secțiune (refolosite) ===== */
+.eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.section-subtitle {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-muted);
+}
+
+/* ===== 4. Avantaje ===== */
+.advantages {
+  padding: 60px 40px 80px;
+  text-align: center;
+}
+
+.advantages__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.advantage {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 20px 28px 24px;
+  border-top: 3px solid var(--color-dark);
+}
+
+.advantage__number {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #e8ecf2;
+}
+
+.advantage__icon {
+  font-size: 26px;
+}
+
+.advantage h3 {
+  grid-column: 1 / -1;
+  margin-top: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.advantage p {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 23px;
   color: var(--color-muted);
 }
