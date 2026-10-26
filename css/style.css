@@ -845,3 +845,20 @@ img {
   line-height: 20px;
   color: #94a3b8;
 }
+
+/* ===== 11. Buton plutitor (fixed) ===== */
+.chat-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 24px;
+}
