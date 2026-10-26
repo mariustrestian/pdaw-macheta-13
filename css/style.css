@@ -550,3 +550,134 @@ img {
 .gallery__img--wide {
   grid-column: span 2;
 }
+
+/* ===== 8. Închiriere (prețuri) ===== */
+.pricing {
+  padding: 60px 40px 80px;
+  text-align: center;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+  margin-top: 43px;
+  text-align: left;
+}
+
+.plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 388px;
+  padding: 32px 24px 28px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.plan h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.plan__price {
+  margin-top: 10px;
+  font-family: var(--font-heading);
+  font-size: 38px;
+  line-height: 46px;
+  color: var(--color-ink);
+}
+
+.plan__price span {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-muted);
+}
+
+.plan__list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.plan__list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--color-border);
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-dark);
+}
+
+.plan__list li::before {
+  content: "✓";
+  margin-right: 8px;
+  color: var(--color-dark);
+}
+
+.plan .btn {
+  align-self: center;
+  margin-top: auto;
+  padding: 11px 24px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+}
+
+.btn--gold {
+  background: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  color: var(--color-white);
+}
+
+/* Planul evidențiat */
+.plan--featured {
+  height: 418px;
+  padding: 47px 24px 43px;
+  background: #0f131a;
+  border-color: #334155;
+}
+
+.plan--featured h3,
+.plan--featured .plan__price {
+  color: var(--color-white);
+}
+
+.plan--featured .plan__price span {
+  color: #cbd5e1;
+}
+
+.plan--featured .plan__list li {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+  color: #e2e8f0;
+}
+
+.plan--featured .plan__list li::before {
+  color: var(--color-gold);
+}
+
+/* Etichetă absolută „Cel mai ales” */
+.plan__badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 16px;
+  background: var(--color-gold);
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-white);
+}
